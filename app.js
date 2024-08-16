@@ -27,10 +27,106 @@ class Ship{
       console.log(`accuracy: ${this.accuracy}`)
     }
   }
+
 // USSShip
+
+// Your spaceship, the USS Assembly should have the following properties:
+// hull - 20
+// firepower - 5
+// accuracy - .7
 
 const USSShip = new Ship(20, 5, 0.7);
 USSShip.displayFeatures();
 
-// Alien Ship
 
+
+// Allien Ship
+
+// hull - between 3and 6
+// firepower - between 2and 4
+// accuracy - between .6and .8
+
+function NumRandomRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+  
+// for (let i = 0; i < 6; i++) {
+function generateAlienShip(){
+    const hull = NumRandomRange(3, 6);
+    const firepower = NumRandomRange(2, 4);
+    const accuracy = NumRandomRange(6, 8) / 10;
+    return new Ship(hull, firepower, accuracy);
+}
+ // }
+
+console.log('------')
+
+let AlienShip = [generateAlienShip(), generateAlienShip(), generateAlienShip(), generateAlienShip(), generateAlienShip(), generateAlienShip()];
+
+// const AlienShip1 = generateAlienShip();
+// AlienShip1.displayFeatures();
+    
+// const AlienShip2 = generateAlienShip();
+// AlienShip2.displayFeatures();
+    
+// // const AlienShip3 = generateAlienShip();
+// // AlienShip3.displayFeatures();
+
+// // const AlienShip4 = generateAlienShip();
+// // AlienShip4.displayFeatures();
+
+// // const AlienShip5 = generateAlienShip();
+// // AlienShip5.displayFeatures();
+
+// // const AlienShip6 = generateAlienShip();
+// // AlienShip6.displayFeatures();
+
+console.log('------')
+// while(USSShip.hull > 0 && AlienShip1.hull > 0){
+  function USSattack(){
+    if (Math.random() < USSShip.accuracy) {
+      AlienShip.hull -= USSShip.firepower;
+      console.log('You hit the alien ship! yor new life is: ' + AlienShip1.hull);
+
+      if (AlienShip1.hull <= 0){
+        console.log('You destroyed the alien ship!');
+        return;
+      }
+      else{
+        console.log('The alien ship is still alive!')
+        
+      }
+        
+    } else {
+      console.log('You missed the alien ship!');
+    }
+  }
+// }
+    
+USSattack();
+
+
+console.log('------')
+
+function AlienAttack(){
+  if (Math.random() < AlienShip2.accuracy) {
+    USSShip.hull -= AlienShip2.firepower;
+    console.log('You got hit! yor new life is: ' + USSShip.hull);
+
+    if (USSShip.hull <= 0){
+      console.log('You got destroyed');
+      return;
+    }
+    else{
+      console.log('You are still alive')
+        return;
+    }
+      
+  } else {
+    console.log('They missed!');
+  }
+}
+
+AlienAttack();
+AlienAttack();
+AlienAttack();
