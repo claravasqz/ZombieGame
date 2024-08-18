@@ -78,6 +78,21 @@ body {
     width: 20vh;
     background-image: url(https://media.istockphoto.com/id/617742228/photo/old-dirty-and-grunge-paper-texture.jpg?s=612x612&w=0&k=20&c=z1SEoVWBhV3TS2_ul5gahs4_Oeg3gWhqkZ3eSjHJ6Rc=);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
+    display: none;
+}
+
+#restartGame{
+    display: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-image: url(https://thumbs.dreamstime.com/b/closeup-old-paper-texture-age-marks-29969606.jpg);
+    color: rgb(65, 50, 23); 
+    border: none; 
+    font-weight: bold;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.644); 
+    cursor: pointer; 
+
 }
 
 .Space{
@@ -99,6 +114,7 @@ body {
     text-transform: uppercase;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
     cursor: pointer;
+    display: none;
 
 }
 
@@ -115,6 +131,7 @@ body {
     text-transform: uppercase;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
     cursor: pointer;
+    display: none;
 
 }
 

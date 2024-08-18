@@ -61,6 +61,7 @@ function generateZombie() {
 
 document.getElementById('startGame').addEventListener('click', function() {
   this.style.display = 'none';
+  window.alert('Instructions: Click the "Attack" button to fight the zombies. Each round, you must defeat the zombie to advance to the next one. Survive all 6 rounds to win the game!')
   document.getElementById('heroAttack').style.display = 'block';
   document.getElementById('gameStatus').style.display = 'block';
   document.getElementById('restartGame').style.display = 'none';
