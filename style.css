@@ -1,0 +1,194 @@
+body {
+    background-image: url(//media.indiedb.com/images/games/1/75/74368/menu_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+.first{
+    /* border: solid red; */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startGame{
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-image: url(https://thumbs.dreamstime.com/b/closeup-old-paper-texture-age-marks-29969606.jpg);
+    color: rgb(65, 50, 23); 
+    border: none; 
+    font-weight: bold;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.644); 
+    cursor: pointer; 
+    /* display: none; */
+}
+
+#startGame:hover{
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTA1NzQwNC1pbWFnZS1qb2I2MzAtYV8xLmpwZw.jpg);
+    color: rgb(137, 126, 107);
+
+}
+
+#gameCenter{
+    display: flex;
+    justify-content: space-around;
+}
+
+#heroImg{
+    height: 50vh;
+    margin-top: 15vh;
+    margin-right: 20vw;
+}
+
+#zombieImg{
+    height: 50vh;
+    margin-top: 15vh;
+}
+
+.hide{
+    
+    display: none;
+}
+
+.roundCounter{
+    border: solid red;
+    width: 15%;
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.round{
+    margin: 5px;
+    font-size: x-large;
+    /* font-weight: bold; */
+
+}
+
+.roundCounter{
+    height: 20vh;
+    width: 20vh;
+    background-image: url(https://media.istockphoto.com/id/617742228/photo/old-dirty-and-grunge-paper-texture.jpg?s=612x612&w=0&k=20&c=z1SEoVWBhV3TS2_ul5gahs4_Oeg3gWhqkZ3eSjHJ6Rc=);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
+}
+
+.Space{
+    display: flex;
+    /* border: solid red; */
+    justify-content: space-around;
+}
+
+#heroAttack{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://w0.peakpx.com/wallpaper/936/600/HD-wallpaper-old-stone-texture-brown-stone-background-stone-textures-old-stone-stone-backgrounds-thumbnail.jpg);
+    color: rgb(50, 40, 5); 
+    border: none; 
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
+    cursor: pointer;
+
+}
+
+#zombieAttack{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://w0.peakpx.com/wallpaper/936/600/HD-wallpaper-old-stone-texture-brown-stone-background-stone-textures-old-stone-stone-backgrounds-thumbnail.jpg);
+    color: rgb(50, 40, 5); 
+    border: none; 
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836); 
+    cursor: pointer;
+
+}
+
+.lifeSpace{
+    /* border: solid green; */
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.heroLife{
+    margin-top: 10px;
+    border: 4px solid black;
+    height: 15px;
+    width: 35%;
+    display: flex;
+}
+
+.zombieLife{
+    
+    margin-top: 10px;
+    border: 4px solid black;
+    height: 15px;
+    width: 35%;
+    display: flex;
+}
+
+.fqLifeH{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.sqLifeH{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.tqLifeH{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.ftqLifeH{
+    border: solid red;
+    height: 13px;
+    width: 25%;
+    background-color: red;
+}
+
+.fqLifeZ{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.sqLifeZ{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.tqLifeZ{
+    border: solid red;
+    height: 13px;
+    width: 23%;
+    background-color: red;
+}
+.ftqLifeZ{
+    border: solid red;
+    height: 13px;
+    width: 25%;
+    background-color: red;
+}

@@ -9,7 +9,53 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>hola</h1>
+        <div class="first">
+            <button id="startGame" class="start-game-button">START GAME</button>
+            <button id="restartGame" class="restart-button" style="display:none;">Restart Game</button>
+        </div>
+        <div class="Space">
+            <div class="heroSpace">
+                <button id="heroAttack" class="attack-button" style="display:none;">
+                Attack
+                </button>
+            </div>
+            <div id="gameStatus" class="roundCounter" style="display:none;">
+                <p>Round: <span id="roundNumber">1</span></p>
+                <p>Hero Live: <span id="heroHull"></span></p>
+                <p>Zombie Live: <span id="zombieHull"></span></p>
+            </div>
+            <div class="zombieSpace">
+                <Button id="zombieAttack">Attack
+                </Button>
+            </div>
+        </div>
+        <div class="lifeSpace">
+            <div class="heroLife">
+                <div class="fqLifeH"></div>
+                <div class="sqLifeH">
+                </div>
+                <div class="tqLifeH">
+                </div>
+                <div class="ftqLifeH"></div>
+            </div>
+            <div class="zombieLife">
+                <div class="fqLifeZ"></div>
+                <div class="sqLifeZ">
+                </div>
+                <div class="tqLifeZ">
+                </div>
+                <div class="ftqLifeZ"></div>
+            </div>
+            </div>
+        </div>
+
+        <div id="gameCenter" class="hide" >
+                <img src="https://clipart-library.com/image_gallery2/Dead-Rising.png" id="heroImg">
+
+                <img src="https://pngimg.com/d/zombie_PNG29.png" id="zombieImg" alt="">
+            </div>
+        </div>
+
         
         <script src="app.js" async defer></script>
     </body>
